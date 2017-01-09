@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|TOGGLE|           |CTLALT|------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |MOUSE |           | DEL  |   N  |   M  |  ,<  |  .>  |   /  |   [{   |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |  cut | paste| copy | Left | Right|                                       |  Up  | Down |  [{  |  }]  |   \  |
+ *   |  cut | paste| copy | '/Cmd| Right|                                       |  Up  | Down |  [{  |  }]  |   \  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | App  | LGui |       | Alt  |Ctrl/Esc|
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,         KC_W,   KC_E,   KC_R,   KC_T,   MO(FN),
         KC_LCTL,        KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,        KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   TG(MOUSE),
-        LCTL(KC_X),     LCTL(KC_V),   LCTL(KC_C),   KC_LEFT,  KC_RGHT,
+        LCTL(KC_X),     LCTL(KC_V),   LCTL(KC_C),     GUI_T(KC_QUOT),  KC_RGHT,
                                               ALT_T(KC_APP),  KC_LGUI,
                                                               KC_HOME,
                                                KC_SPC,KC_BSPC,KC_END,
